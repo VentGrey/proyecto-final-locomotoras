@@ -147,14 +147,14 @@ public class FXMLAlta_MaquinistaController implements Initializable {
             txtAntiguedad.setText("");
             
             Alert msgC = new Alert(Alert.AlertType.INFORMATION);
-            msgC.setTitle("Agregado");
-            msgC.setHeaderText("Se agrego correctamente el registro");
+            msgC.setTitle("¡Listo!");
+            msgC.setHeaderText("Se agregó el maquinista.");
             msgC.show();
 
         } catch (Exception ex) {
             Alert msgE = new Alert(Alert.AlertType.ERROR);
-            msgE.setTitle("Error");
-            msgE.setHeaderText("No se pudo agregar");
+            msgE.setTitle("¡ERROR!");
+            msgE.setHeaderText("No se pudo agregar maquinista :( ");
             msgE.show();
         }
     }
