@@ -133,6 +133,13 @@ public class FXMLAlta_MaquinistaController implements Initializable {
                         }
                     }
             String nombre = txtNombre.getText();
+            if (nombre.length() >= 15) {
+                Alert msgE = new Alert(Alert.AlertType.ERROR);
+                msgE.setTitle("Error en el nombre");
+                msgE.setHeaderText("El nombre que usted está intentando "
+                        + "registrar supera los 15 carácteres, ingrese un "
+                        + "nombre más corto");
+            }
             String apPaterno = txtApPaterno.getText();
             int cedula = Integer.valueOf(txtCedula.getText());
             int antiguedad = Integer.valueOf(txtAntiguedad.getText());
